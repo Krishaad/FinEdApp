@@ -14,151 +14,51 @@
     <div class="container">
         <h1>Pensions Overview</h1>
 
-        <div class="pension-summary">
-            <h2>What is a Pension?</h2>
-            <p>
-                A pension is a retirement plan that provides a monthly income after you retire. There are different types of pensions, including state pensions, workplace pensions, and personal pensions.
-            </p>
-        </div>
-
-        <div class="pension-types">
-            <h2>Types of Pensions</h2>
-            <ul>
-                <li><strong>State Pension:</strong> The regular payment provided by the government once you reach state pension age.</li>
-                <li><strong>Workplace Pension:</strong> A pension scheme arranged by your employer. It can be defined benefit or defined contribution.</li>
-                <li><strong>Personal Pension:</strong> A private pension that you arrange yourself, which can be contributed to even if you have other pension plans.</li>
-            </ul>
-        </div>
-
-        <div class="pension-benefits">
-            <h2>Benefits of Pensions</h2>
-            <ul>
-                <li>Provides financial security in retirement.</li>
-                <li>Many pensions are tax-advantaged, meaning you can save on taxes.</li>
-                <li>Potential employer contributions in workplace pensions.</li>
-            </ul>
-        </div>
-
-        <div class="pension-contributions">
-            <h2>Pension Contributions</h2>
-            <p>
-                It's important to regularly contribute to your pension throughout your working life. Contributions may come from your salary, your employer, and government incentives.
-            </p>
-        </div>
-
-        <div class="pension-planning">
-            <h2>Pension Planning</h2>
-            <p>
-                Proper planning is crucial to ensure you have enough income to support your lifestyle in retirement. Consider factors like your desired retirement age, lifestyle, and any other income sources.
-            </p>
-        </div>
-
-        <div class="pension-faq">
-            <h2>Frequently Asked Questions</h2>
-            <ul>
-                <li><strong>How much should I contribute to my pension?</strong> It depends on your income, retirement goals, and age. A financial advisor can help you determine the best amount.</li>
-                <li><strong>When can I access my pension?</strong> This depends on the type of pension you have. Generally, pensions can be accessed from age 55, but this may vary.</li>
-                <li><strong>What happens to my pension if I change jobs?</strong> You can usually transfer your workplace pension to your new employer's scheme or a personal pension.</li>
-            </ul>
-        </div>
+        <a asp-controller="Home" asp-action="PensionSection1" class="btn btn-primary">Section 1</a>
+        <a asp-controller="Home" asp-action="PensionSection2" class="btn btn-primary">Section 2</a>
+        <a asp-controller="Home" asp-action="PensionSection3" class="btn btn-primary">Section 3</a>
     </div>
 
-    <div class="container">
-        <h1>Pensions Overview</h1>
-
-        <div class="pension-summary">
-            <h2>What is a Pension?</h2>
-            <p>
-                A pension is a retirement plan that provides a monthly income after you retire. There are different types of pensions, including state pensions, workplace pensions, and personal pensions.
-            </p>
-        </div>
-
-        <div class="pension-types">
-            <h2>Types of Pensions</h2>
-            <ul>
-                <li><strong>State Pension:</strong> The regular payment provided by the government once you reach state pension age.</li>
-                <li><strong>Workplace Pension:</strong> A pension scheme arranged by your employer. It can be defined benefit or defined contribution.</li>
-                <li><strong>Personal Pension:</strong> A private pension that you arrange yourself, which can be contributed to even if you have other pension plans.</li>
-            </ul>
-        </div>
-
-        <div class="pension-benefits">
-            <h2>Benefits of Pensions</h2>
-            <ul>
-                <li>Provides financial security in retirement.</li>
-                <li>Many pensions are tax-advantaged, meaning you can save on taxes.</li>
-                <li>Potential employer contributions in workplace pensions.</li>
-            </ul>
-        </div>
-
-        <div class="pension-contributions">
-            <h2>Pension Contributions</h2>
-            <p>
-                It's important to regularly contribute to your pension throughout your working life. Contributions may come from your salary, your employer, and government incentives.
-            </p>
-        </div>
-
-        <div class="pension-planning">
-            <h2>Pension Planning</h2>
-            <p>
-                Proper planning is crucial to ensure you have enough income to support your lifestyle in retirement. Consider factors like your desired retirement age, lifestyle, and any other income sources.
-            </p>
-        </div>
-
-        <div class="pension-faq">
-            <h2>Frequently Asked Questions</h2>
-            <ul>
-                <li><strong>How much should I contribute to my pension?</strong> It depends on your income, retirement goals, and age. A financial advisor can help you determine the best amount.</li>
-                <li><strong>When can I access my pension?</strong> This depends on the type of pension you have. Generally, pensions can be accessed from age 55, but this may vary.</li>
-                <li><strong>What happens to my pension if I change jobs?</strong> You can usually transfer your workplace pension to your new employer's scheme or a personal pension.</li>
-            </ul>
-        </div>
-    </div>
 
     <style>
         .container {
             margin: 20px auto;
             max-width: 800px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .pension-summary, .pension-types, .pension-benefits, .pension-contributions, .pension-planning, .pension-faq {
-            margin-bottom: 30px;
-        }
-
-        h1, h2 {
+        h1 {
             color: #2C3E50;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
-        p, ul {
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
             font-size: 16px;
-            line-height: 1.6;
+            text-align: center;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 5px;
         }
+
+        .btn-primary {
+            background-color: #2C3E50;
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-primary:hover {
+                background-color: #1a2533;
+            }
     </style>
-    Explanation:
-    Layout: The Layout directive points to a shared layout file (usually _Layout.cshtml) where the common structure of the site (like header, footer, and navigation) is defined.
-
-    Content Sections: The page is divided into sections such as pension summary, types of pensions, benefits, contributions, planning, and FAQ.
-
-    Styling: A basic style block is included to give some structure and styling to the content.
-
-    Usage:
-    Save this code as a .cshtml file within your Views folder in an ASP.NET MVC project, such as Views/Pensions/Index.cshtml.
-    Ensure that your controller returns this view for it to be displayed.
-    This template can be modified and expanded as needed to fit the specific requirements of your project.
-
-
-
-
-
-    You said:
-    create a quiz for this pension page based on the content
-    ChatGPT said:
-    ChatGPT
-    Certainly! Below is a sample quiz that you can add to the pension page. This quiz is based on the content provided in the .cshtml page related to pensions.
-
-    Pension Quiz .cshtml Page
-    cshtml
-    Copy code
+   
     @{
         Layout = "~/Views/Shared/_Layout.cshtml";
         ViewBag.Title = "Pension Quiz";

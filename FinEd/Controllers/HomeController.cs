@@ -42,6 +42,27 @@ namespace FinEd.Controllers
             return View();
         }
 
+        public IActionResult PensionSection1()
+        {
+            return View("~/Views/Home/PensionPages/PensionSection1.cshtml");
+        }
+
+        public IActionResult PensionSection2()
+        {
+            return View("~/Views/Home/PensionPages/PensionSection2.cshtml");
+        }
+
+        public IActionResult PensionSection3()
+        {
+            return View("~/Views/Home/PensionPages/PensionSection3.cshtml");
+        }
+
+        public IActionResult PensionComplete()
+        {
+            return View("~/Views/Home/PensionPages/PensionComplete.cshtml");
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

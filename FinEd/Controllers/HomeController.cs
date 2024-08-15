@@ -23,6 +23,25 @@ namespace FinEd.Controllers
             return View();
         }
 
+        public IActionResult Pension()
+        {
+            return View();
+        }
+        public IActionResult Savings()
+        {
+            return View();
+        }
+
+        public IActionResult Mortgages()
+        {
+            return View();
+        }
+
+        public IActionResult Tax()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

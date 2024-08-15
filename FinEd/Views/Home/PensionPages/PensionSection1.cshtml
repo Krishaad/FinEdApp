@@ -15,7 +15,28 @@
             <li><strong>Workplace Pension:</strong> A pension scheme arranged by your employer. It can be defined benefit or defined contribution.</li>
             <li><strong>Personal Pension:</strong> A private pension that you arrange yourself, which can be contributed to even if you have other pension plans.</li>
         </ul>
-        <a asp-controller="Home" asp-action="PensionSection2" class="btn-btn-primary"> Next Page</a>
+        <a class="btn btn-primary" asp-controller="Home" asp-action="PensionSection2" class="btn-btn-primary"> Next Page</a>
     </div>
 
 }
+
+<style>
+    .btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn-primary {
+        background-color: #2C3E50;
+        color: white;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+</style>

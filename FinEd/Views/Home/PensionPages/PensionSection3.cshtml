@@ -53,5 +53,26 @@
             <li><strong>What happens to my pension if I change jobs?</strong> You can usually transfer your workplace pension to your new employer's scheme or a personal pension.</li>
         </ul>
 
-        <a asp-controller="Home" asp-action="PensionComplete" class="btn-btn-primary">Finish</a>
+        <a class="btn btn-primary" asp-controller="Home" asp-action="PensionComplete" class="btn-btn-primary">Finish</a>
     </div>
+
+    <style>
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #2C3E50;
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+    </style>
